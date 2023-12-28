@@ -19,7 +19,21 @@
 		B812CB8F2B369428005698E2 /* WaterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B812CB8E2B369428005698E2 /* WaterModel.swift */; };
 		B8FFA2332B3CF3A000000726 /* WaterAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = B8FFA2322B3CF3A000000726 /* WaterAnimation.json */; };
 		B8FFA2352B3CF41D00000726 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FFA2342B3CF41D00000726 /* LocalNotificationManager.swift */; };
+		B8FFA25D2B3D011D00000726 /* HydratedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FFA25C2B3D011D00000726 /* HydratedTests.swift */; };
+		B8FFA2642B3D017400000726 /* WaterModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FFA2632B3D017400000726 /* WaterModelTests.swift */; };
+		B8FFA2662B3D02AD00000726 /* LocalNotificationModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FFA2652B3D02AD00000726 /* LocalNotificationModelTests.swift */; };
+		B8FFA26A2B3D093B00000726 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FFA2692B3D093B00000726 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B8FFA25E2B3D011D00000726 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B812CB642B36822C005698E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B812CB6B2B36822C005698E2;
+			remoteInfo = Hydrated;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1576F1C1712995554E7BC82C /* Pods-Hydrated.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hydrated.debug.xcconfig"; path = "Target Support Files/Pods-Hydrated/Pods-Hydrated.debug.xcconfig"; sourceTree = "<group>"; };
@@ -37,6 +51,11 @@
 		B812CB8E2B369428005698E2 /* WaterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterModel.swift; sourceTree = "<group>"; };
 		B8FFA2322B3CF3A000000726 /* WaterAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WaterAnimation.json; sourceTree = "<group>"; };
 		B8FFA2342B3CF41D00000726 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
+		B8FFA25A2B3D011D00000726 /* HydratedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HydratedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8FFA25C2B3D011D00000726 /* HydratedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydratedTests.swift; sourceTree = "<group>"; };
+		B8FFA2632B3D017400000726 /* WaterModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterModelTests.swift; sourceTree = "<group>"; };
+		B8FFA2652B3D02AD00000726 /* LocalNotificationModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationModelTests.swift; sourceTree = "<group>"; };
+		B8FFA2692B3D093B00000726 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EB7609265A282ED34AE4E4CF /* Pods-Hydrated.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hydrated.release.xcconfig"; path = "Target Support Files/Pods-Hydrated/Pods-Hydrated.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,6 +65,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				565DEB93CA897765C3033066 /* Pods_Hydrated.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8FFA2572B3D011D00000726 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				B812CB6E2B36822C005698E2 /* Hydrated */,
+				B8FFA25B2B3D011D00000726 /* HydratedTests */,
 				B812CB6D2B36822C005698E2 /* Products */,
 				05854E5E51E1FA8D6991B9C2 /* Pods */,
 				8FEDCFC64E5BC2C9F52F42F1 /* Frameworks */,
@@ -83,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				B812CB6C2B36822C005698E2 /* Hydrated.app */,
+				B8FFA25A2B3D011D00000726 /* HydratedTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +127,7 @@
 				B812CB782B36822D005698E2 /* Assets.xcassets */,
 				B812CB7A2B36822D005698E2 /* LaunchScreen.storyboard */,
 				B812CB7D2B36822D005698E2 /* Info.plist */,
+				B8FFA2692B3D093B00000726 /* BaseViewController.swift */,
 			);
 			path = Hydrated;
 			sourceTree = "<group>";
@@ -130,6 +159,16 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		B8FFA25B2B3D011D00000726 /* HydratedTests */ = {
+			isa = PBXGroup;
+			children = (
+				B8FFA25C2B3D011D00000726 /* HydratedTests.swift */,
+				B8FFA2632B3D017400000726 /* WaterModelTests.swift */,
+				B8FFA2652B3D02AD00000726 /* LocalNotificationModelTests.swift */,
+			);
+			path = HydratedTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,6 +191,24 @@
 			productReference = B812CB6C2B36822C005698E2 /* Hydrated.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B8FFA2592B3D011D00000726 /* HydratedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8FFA2622B3D011D00000726 /* Build configuration list for PBXNativeTarget "HydratedTests" */;
+			buildPhases = (
+				B8FFA2562B3D011D00000726 /* Sources */,
+				B8FFA2572B3D011D00000726 /* Frameworks */,
+				B8FFA2582B3D011D00000726 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B8FFA25F2B3D011D00000726 /* PBXTargetDependency */,
+			);
+			name = HydratedTests;
+			productName = HydratedTests;
+			productReference = B8FFA25A2B3D011D00000726 /* HydratedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -164,6 +221,10 @@
 				TargetAttributes = {
 					B812CB6B2B36822C005698E2 = {
 						CreatedOnToolsVersion = 15.1;
+					};
+					B8FFA2592B3D011D00000726 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = B812CB6B2B36822C005698E2;
 					};
 				};
 			};
@@ -181,6 +242,7 @@
 			projectRoot = "";
 			targets = (
 				B812CB6B2B36822C005698E2 /* Hydrated */,
+				B8FFA2592B3D011D00000726 /* HydratedTests */,
 			);
 		};
 /* End PBXProject section */
@@ -194,6 +256,13 @@
 				B812CB792B36822D005698E2 /* Assets.xcassets in Resources */,
 				B8FFA2332B3CF3A000000726 /* WaterAnimation.json in Resources */,
 				B812CB772B36822C005698E2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8FFA2582B3D011D00000726 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,12 +320,31 @@
 				B812CB702B36822C005698E2 /* AppDelegate.swift in Sources */,
 				B812CB8B2B368EDC005698E2 /* LocalNotificationModel.swift in Sources */,
 				B812CB8F2B369428005698E2 /* WaterModel.swift in Sources */,
+				B8FFA26A2B3D093B00000726 /* BaseViewController.swift in Sources */,
 				B812CB8D2B3692B2005698E2 /* SettingsViewController.swift in Sources */,
 				B812CB722B36822C005698E2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B8FFA2562B3D011D00000726 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8FFA2662B3D02AD00000726 /* LocalNotificationModelTests.swift in Sources */,
+				B8FFA25D2B3D011D00000726 /* HydratedTests.swift in Sources */,
+				B8FFA2642B3D017400000726 /* WaterModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B8FFA25F2B3D011D00000726 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B812CB6B2B36822C005698E2 /* Hydrated */;
+			targetProxy = B8FFA25E2B3D011D00000726 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B812CB752B36822C005698E2 /* Main.storyboard */ = {
@@ -456,6 +544,44 @@
 			};
 			name = Release;
 		};
+		B8FFA2602B3D011D00000726 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DT2L5YASLB;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulokeller.HydratedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hydrated.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Hydrated";
+			};
+			name = Debug;
+		};
+		B8FFA2612B3D011D00000726 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DT2L5YASLB;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulokeller.HydratedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hydrated.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Hydrated";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -473,6 +599,15 @@
 			buildConfigurations = (
 				B812CB812B36822D005698E2 /* Debug */,
 				B812CB822B36822D005698E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8FFA2622B3D011D00000726 /* Build configuration list for PBXNativeTarget "HydratedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8FFA2602B3D011D00000726 /* Debug */,
+				B8FFA2612B3D011D00000726 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

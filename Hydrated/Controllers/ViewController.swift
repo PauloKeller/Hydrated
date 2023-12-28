@@ -8,7 +8,7 @@
 import UIKit
 import Lottie
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
   @IBOutlet weak var animationView: LottieAnimationView!
   @IBOutlet weak var intervalLabel: UILabel!
   
@@ -20,12 +20,16 @@ class ViewController: UIViewController {
     viewConfiguration()
   }
   
-  func viewConfiguration() {
+  private func viewConfiguration() {
     title = "Hydrated"
     
     setupAnimationView()
     
-    LocalNotificationModel.checkNotificationPermission { _, _ in }
+    LocalNotificationModel.checkNotificationPermission { isGranted, error in
+      if let error = error {
+        self.showErrorAlert(with: error.localizedDescription)
+      }
+    }
     
     intervalLabel.text = "You need to drink water every \(Int(manager.model.hours)) hours"
   }

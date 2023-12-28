@@ -30,7 +30,7 @@ struct LocalNotificationModel {
     }
   }
   
-  func createRequest() {
+  func createRequest(completion: @escaping (Bool, Error?) -> ()) {
     let center = UNUserNotificationCenter.current()
     let trigger = createNotificationTrigger()
     let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
@@ -38,8 +38,10 @@ struct LocalNotificationModel {
     center.add(request) { error in
       if let error = error {
         print("Error scheduling notification: \(error.localizedDescription)")
+        completion(false, error)
       } else {
         print("Repeating notification scheduled successfully")
+        completion(true, error)
       }
     }
   }

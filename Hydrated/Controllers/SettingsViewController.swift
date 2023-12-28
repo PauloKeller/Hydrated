@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: BaseViewController {
   @IBOutlet weak var waterPerDayLabel: UILabel!
   @IBOutlet weak var waterPerIntervalLabel: UILabel!
   
@@ -37,7 +37,7 @@ class SettingsViewController: UIViewController {
   @IBAction func saveButtonTapped(_ sender: Any) {
     let interval = waterModel.getWaterInterval(totalWater: Double(waterInLiters), waterFraction: Double(waterFraction))
     localNotificationManager.setInterval(hours: interval)
-    localNotificationManager.model.createRequest()
+    localNotificationManager.model.createRequest(completion: { _,_ in })
     
     navigationController?.popViewController(animated: true)
   }
