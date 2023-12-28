@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		565DEB93CA897765C3033066 /* Pods_Hydrated.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E81A4D90BFBAB287B01B95E /* Pods_Hydrated.framework */; };
 		B812CB702B36822C005698E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B812CB6F2B36822C005698E2 /* AppDelegate.swift */; };
 		B812CB722B36822C005698E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B812CB712B36822C005698E2 /* SceneDelegate.swift */; };
 		B812CB742B36822C005698E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B812CB732B36822C005698E2 /* ViewController.swift */; };
 		B812CB772B36822C005698E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B812CB752B36822C005698E2 /* Main.storyboard */; };
 		B812CB792B36822D005698E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B812CB782B36822D005698E2 /* Assets.xcassets */; };
 		B812CB7C2B36822D005698E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B812CB7A2B36822D005698E2 /* LaunchScreen.storyboard */; };
-		B812CB852B3682BC005698E2 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = B812CB842B3682BC005698E2 /* Lottie */; };
 		B812CB8B2B368EDC005698E2 /* LocalNotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B812CB8A2B368EDC005698E2 /* LocalNotificationModel.swift */; };
 		B812CB8D2B3692B2005698E2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B812CB8C2B3692B2005698E2 /* SettingsViewController.swift */; };
 		B812CB8F2B369428005698E2 /* WaterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B812CB8E2B369428005698E2 /* WaterModel.swift */; };
@@ -22,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1576F1C1712995554E7BC82C /* Pods-Hydrated.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hydrated.debug.xcconfig"; path = "Target Support Files/Pods-Hydrated/Pods-Hydrated.debug.xcconfig"; sourceTree = "<group>"; };
+		3E81A4D90BFBAB287B01B95E /* Pods_Hydrated.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hydrated.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B812CB6C2B36822C005698E2 /* Hydrated.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hydrated.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B812CB6F2B36822C005698E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B812CB712B36822C005698E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +37,7 @@
 		B812CB8E2B369428005698E2 /* WaterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterModel.swift; sourceTree = "<group>"; };
 		B8FFA2322B3CF3A000000726 /* WaterAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WaterAnimation.json; sourceTree = "<group>"; };
 		B8FFA2342B3CF41D00000726 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
+		EB7609265A282ED34AE4E4CF /* Pods-Hydrated.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hydrated.release.xcconfig"; path = "Target Support Files/Pods-Hydrated/Pods-Hydrated.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,18 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B812CB852B3682BC005698E2 /* Lottie in Frameworks */,
+				565DEB93CA897765C3033066 /* Pods_Hydrated.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05854E5E51E1FA8D6991B9C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1576F1C1712995554E7BC82C /* Pods-Hydrated.debug.xcconfig */,
+				EB7609265A282ED34AE4E4CF /* Pods-Hydrated.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8FEDCFC64E5BC2C9F52F42F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E81A4D90BFBAB287B01B95E /* Pods_Hydrated.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B812CB632B36822C005698E2 = {
 			isa = PBXGroup;
 			children = (
 				B812CB6E2B36822C005698E2 /* Hydrated */,
 				B812CB6D2B36822C005698E2 /* Products */,
+				05854E5E51E1FA8D6991B9C2 /* Pods */,
+				8FEDCFC64E5BC2C9F52F42F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,18 +137,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B812CB802B36822D005698E2 /* Build configuration list for PBXNativeTarget "Hydrated" */;
 			buildPhases = (
+				F5DA73F4CB668C66D87E06B8 /* [CP] Check Pods Manifest.lock */,
 				B812CB682B36822C005698E2 /* Sources */,
 				B812CB692B36822C005698E2 /* Frameworks */,
 				B812CB6A2B36822C005698E2 /* Resources */,
+				6BDCD1B8ED598CC90C293DB5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Hydrated;
-			packageProductDependencies = (
-				B812CB842B3682BC005698E2 /* Lottie */,
-			);
 			productName = Hydrated;
 			productReference = B812CB6C2B36822C005698E2 /* Hydrated.app */;
 			productType = "com.apple.product-type.application";
@@ -155,9 +176,6 @@
 				Base,
 			);
 			mainGroup = B812CB632B36822C005698E2;
-			packageReferences = (
-				B812CB832B3682BC005698E2 /* XCRemoteSwiftPackageReference "lottie-spm" */,
-			);
 			productRefGroup = B812CB6D2B36822C005698E2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -180,6 +198,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6BDCD1B8ED598CC90C293DB5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hydrated/Pods-Hydrated-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Hydrated/Pods-Hydrated-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Hydrated/Pods-Hydrated-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5DA73F4CB668C66D87E06B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hydrated-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B812CB682B36822C005698E2 /* Sources */ = {
@@ -255,7 +315,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -318,7 +378,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -331,6 +391,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
@@ -339,6 +400,7 @@
 		};
 		B812CB812B36822D005698E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1576F1C1712995554E7BC82C /* Pods-Hydrated.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -367,6 +429,7 @@
 		};
 		B812CB822B36822D005698E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB7609265A282ED34AE4E4CF /* Pods-Hydrated.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -415,25 +478,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		B812CB832B3682BC005698E2 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.3.4;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		B812CB842B3682BC005698E2 /* Lottie */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B812CB832B3682BC005698E2 /* XCRemoteSwiftPackageReference "lottie-spm" */;
-			productName = Lottie;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B812CB642B36822C005698E2 /* Project object */;
 }
